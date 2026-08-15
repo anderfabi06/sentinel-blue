@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  sentinel-db:
+    image: mysql:8.0
+    container_name: sentinel_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: sentinel_root_pass
+      MYSQL_DATABASE: sentinel_db
+      MYSQL_USER: sentinel_user
+      MYSQL_PASSWORD: sentinel_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  cowrie-honeypot:
+    image: cowrie/cowrie:latest
+    container_name: sentinel_cowrie
+    restart: always
+    ports:
+      - "2222:2222"
+
+volumes:
+  mysql_data:
