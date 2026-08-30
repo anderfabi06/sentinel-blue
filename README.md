@@ -1,8 +1,3 @@
-Sí, ya veo el problema de tu README actual: **GitHub está interpretando parte de la estructura como texto corrido**, por eso se ve amontonado. Hay que separar bien los títulos, usar bloques de código para comandos y estructura, y tablas para distribución.
-
-Te recomiendo este README. Está hecho específicamente para **tu estructura actual y para que tus compañeros sepan exactamente cómo descargar, ejecutar y trabajar con Git**.
-
-````markdown
 # 🛡️ Sentinel Blue
 
 ### AI-Powered NOC/SOC Assistant
