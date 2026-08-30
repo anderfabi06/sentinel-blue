@@ -224,12 +224,6 @@ Cada integrante debe utilizar su propio entorno virtual.
 python3 -m venv venv
 ```
 
-### 🪟 Windows
-
-```bash
-python -m venv venv
-```
-
 ---
 
 ## 3. ▶️ Activar el entorno virtual
@@ -238,18 +232,6 @@ python -m venv venv
 
 ```bash
 source venv/bin/activate
-```
-
-### 🪟 Windows CMD
-
-```cmd
-venv\Scripts\activate
-```
-
-### 🪟 Windows PowerShell
-
-```powershell
-venv\Scripts\Activate.ps1
 ```
 
 Si se activó correctamente aparecerá:
@@ -803,6 +785,3 @@ deactivate
 **Monitorizar → Analizar → Detectar → Investigar → Responder**
 
 ```
-
-**Este formato te va a quedar mucho más limpio en GitHub** porque cada sección está separada y la estructura del proyecto está dentro de un bloque de código, en lugar de intentar construir todo el árbol en una sola línea como en tu captura.
-
