@@ -1,15 +1,20 @@
 # Core Servidor Web
-fastapi>=0.100.0
-uvicorn[standard]>=0.22.0
-pydantic>=2.0.0
+fastapi==0.141.1
+uvicorn[standard]==0.52.3
+pydantic==2.13.4
 
 # Agente & LangGraph
-langgraph>=0.0.10
-langchain-core>=0.1.0
+langgraph==1.2.11
+langchain-core==1.6.0
 
-google-genai>=0.1.0
+# IA & LLM Provider
+google-genai==2.19.0
+
+# Interfaz CLI
+rich==15.0.0
 
 # Cliente HTTP base y Utilidades
-httpx>=0.24.0
-python-dotenv>=1.0.0
-pytest>=7.0.0
+httpx==0.28.1
+requests==2.34.2
+python-dotenv==1.2.2
+pytest==9.1.1
