@@ -278,19 +278,23 @@ Crear un archivo:
 
 en la raíz del proyecto.
 
-Ejemplo:
+variables a utilizar:
 
 ```env
-LLM_API_KEY=
+# Configuración del Sistema
+SECRET_KEY=cambiar_este_token_super_secreto
+ENVIRONMENT=development
 
-DATABASE_URL=
+# Configuración de Base de Datos MySQL (Docker)
+DB_HOST=localhost
+DB_PORT=3307
+DB_NAME=sentinel_db
+DB_USER=sentinel_user
+DB_PASSWORD=sentinel_pass
 
-WAZUH_URL=
-WAZUH_USER=
-WAZUH_PASSWORD=
+# Credenciales de LLM (Google Gemini - Free Tier)
+GEMINI_API_KEY=
 
-ZABBIX_URL=
-ZABBIX_TOKEN=
 ```
 
 ⚠️ **Nunca subir el `.env` a GitHub.**
